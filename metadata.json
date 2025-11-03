@@ -1,0 +1,7 @@
+{
+  "name": "IIITDM Kurnool Hostel Management System",
+  "description": "A comprehensive hostel management system for students and administrators at IIITDM Kurnool, featuring gate pass management with QR codes, leave and complaint systems, room allocation, fee payment, and more.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
