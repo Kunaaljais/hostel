@@ -4,8 +4,10 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IIITDM Kurnool Hostel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+    <meta name="description" content="IIITDM Kurnool Hostel Management System" />
+    <meta name="theme-color" content="#1e40af" />
+    <title>IIITDM Kurnool Hostel Management</title>
     <script src="https://cdn.tailwindcss.com"></script>
   <script type="importmap">
 {
@@ -19,7 +21,50 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
+    <style>
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-fade-in {
+        animation: fadeIn 0.3s ease-out;
+      }
+
+      .spinner {
+        border: 3px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        border-top-color: #fff;
+        width: 40px;
+        height: 40px;
+        animation: spin 0.8s linear infinite;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .sidebar-mobile {
+          position: fixed;
+          left: -100%;
+          transition: left 0.3s ease-in-out;
+          z-index: 40;
+        }
+
+        .sidebar-mobile.open {
+          left: 0;
+        }
+      }
+    </style>
 </head>
   <body class="bg-gray-100 text-slate-900">
     <div id="root"></div>
